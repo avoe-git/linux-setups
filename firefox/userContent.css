@@ -1,0 +1,109 @@
+@-moz-document url(about:home), url(about:newtab), url(about:privatebrowsing) {
+    .click-target-container *, .top-sites-list * {
+        color: #fff !important ;
+        text-shadow: 2px 2px 2px #222 !important ;
+    }
+
+    body::before {
+        content: "" ;
+        z-index: -1 ;
+        position: fixed ;
+        top: 0 ;
+        left: 0 ;
+        background: #f9a no-repeat url(img/kkzniu.gif) ;
+        background-size: cover ;
+        width: 100vw ;
+        height: 100vh ;
+    }
+
+    main {
+        background-color: rgba(255,255,255,0.2);
+        box-shadow: 0 0 4px rgba(255,255,255,0.8) !important;
+        border-radius: 8px;
+        transition: box-shadow 0.2s ease !important;
+    }
+
+    main .search-wrapper {
+        background: none !important;
+    }
+
+    .search-wrapper .logo-and-wordmark {
+        transition: filter 0.2s ease;
+    }
+
+    main:hover .search-wrapper .logo-and-wordmark {
+        filter: drop-shadow(0 0 10px rgba(255, 255, 255, 1));
+    }
+
+    main:hover {
+        box-shadow: 0 0 6px rgba(255,255,255,1) !important;
+        /*background-color: rgba(255,255,255,0.3);*/
+    }
+
+    .ds-top-sites .top-site-button .tile{
+        background-color: rgba(255,255,255,0.1) !important;
+        border-radius: 0.1px;
+        border: solid gray;
+        border-width: 1px;
+        box-shadow: 4px 4px 2px rgba(0, 0, 0, 0.5) !important;
+        transition: transform 0.1s ease, box-shadow 0.1s ease;
+    }
+
+    .top-site-outer{
+        background: none !important;
+    }
+
+    .ds-top-sites .top-site-button .tile:hover {
+        box-shadow: 0 0 8px rgba(255,255,255,0.8) !important;
+        transform: translateY(4px) translateX(4px);
+        opacity: 0.8px;
+    }
+    .ds-top-sites .top-site-outer .title span {
+        transition: text-shadow 0.1s ease-out;
+    }
+
+    .ds-top-sites .top-site-outer:hover .title span {
+        text-shadow: 0 0 8px rgba(255,255,255,0.5) !important;
+        transform: translateX(2px) translateY(2px);
+    }
+
+
+    .ds-top-sites .top-site-outer .top-site-icon{
+        background-color: transparent !important;
+    }
+
+    .weatherCard:hover {
+        box-shadow: 0 0 2.5px rgba(255,255,255, 0.9) !important;
+        background-color: rgba(255,255,255,0.1) !important;
+    }
+
+    .icon.icon-settings:hover {
+        box-shadow: 0 0 2.5px rgba(255,255,255, 0.9) !important;
+        background-color: rgba(255,255,255,0.1) !important;
+        transform: translateY(2px) translateX(2px);
+        opacity: 0.8px;
+    }
+
+    .icon.icon-settings {
+        box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5) !important;
+        transition: transform 0.1s ease, box-shadow 0.1s ease;
+    }
+
+    .search-inner-wrapper {
+        background-color: rgba(255,255,255,0.4);
+        box-shadow: 0 0 4px rgba(255,255,255,0.8) !important;
+        transition: box-shadow 0.2s ease !important;
+        border-radius: 6px;
+    }
+
+    .search-handoff-button {
+        background-color: transparent !important;
+    }
+
+    .search-handoff-button:hover {
+        box-shadow: 0 0 4px rgba(0, 221, 255,0.7) !important;
+    }
+}
+
+
+
